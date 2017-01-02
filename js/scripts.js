@@ -2,7 +2,9 @@ function leapYear(year) {
 
     if (year == 1993) {
         return false;
-    };
+    } else if (year % 4 == 0) {
+        return true;
+    }
 
 
 

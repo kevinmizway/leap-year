@@ -18,5 +18,16 @@ $(function() {
         var year = parseInt($("#year").val());
         var result = leapYear(year);
 
-    })
+
+        $(".year").text(year);
+
+        if (!result) {
+            $(".not").text("not");
+        } else {
+            $(".not").text("");
+        }
+
+        $("#results").show();
+
+    });
 });
